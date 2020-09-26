@@ -14,8 +14,6 @@ export default function createMenu() {
                     <span>Hi ${username}</span>`;
     }
 
-    console.log(username);
-
     container.innerHTML = `<div class="menu">
                                 <a href="/" class="${pathname === "/" || pathname === "/index.html" ? "active" : ""}">Home</a>
                                 ${authLink}
