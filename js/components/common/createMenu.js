@@ -10,13 +10,14 @@ export default function createMenu() {
     let authLink = `<a href="login.html" class="${pathname === "/login.html" ? "active" : ""}">Login</a>`;
 
     if (username) {
-        authLink = `<span>Hi ${username}</span>`;
+        authLink = `<a href="add.html" class="${pathname === "/add.html" ? "active" : ""}">Add Product</a>
+                    <span>Hi ${username}</span>`;
     }
 
     console.log(username);
 
     container.innerHTML = `<div class="menu">
-                                <a href="/" class="${pathname === "/" ? "active" : ""}">Home</a>
+                                <a href="/" class="${pathname === "/" || pathname === "/index.html" ? "active" : ""}">Home</a>
                                 ${authLink}
                         </div>`;
 }
