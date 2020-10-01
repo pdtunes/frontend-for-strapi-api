@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+.active{
+    color: red;
+}
 
 :root {
     --primary-colour: darkGreen;
