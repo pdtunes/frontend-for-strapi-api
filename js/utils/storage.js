@@ -1,6 +1,10 @@
 const tokenKey = "token";
 const userKey = "user";
 
+export function clearStorage(){
+    localStorage.clear()
+}
+
 export function saveToken(token) {
     saveToStorage(tokenKey, token);
 }

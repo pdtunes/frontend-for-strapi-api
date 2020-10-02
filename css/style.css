@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+.logout{
+    width: auto;
+    border-radius: 5px;
+
+}
+
+
 :root {
     --primary-colour: darkGreen;
 }
