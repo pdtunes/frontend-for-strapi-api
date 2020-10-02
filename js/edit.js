@@ -2,8 +2,10 @@ import { baseUrl } from "./settings/api.js";
 import displayMessage from "./components/common/displayMessage.js";
 import createMenu from "./components/common/createMenu.js";
 import { getToken } from "./utils/storage.js";
+import deleteButton from "./components/products/deleteButton.js"
 
 createMenu();
+
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -33,6 +35,8 @@ const loading = document.querySelector(".loading");
         description.value = details.description;
         idInput.value = details.id;
 
+        deleteButton(details.id)
+        
         console.log(details);
     } catch (error) {
         console.log(error);
